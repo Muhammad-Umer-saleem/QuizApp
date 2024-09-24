@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(200, 100%, 20%);
+}
+
+.container {
+    width: 250px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid hsl(200, 100%, 30%);
+    background-color: hsl(200, 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn.correct {
+    background-color: hsl(145, 100%, 50%);
+}
+
+.btn.wrong {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: green;
+    text-align: center;
+}
+.timer {
+    font-size: 24px;
+    color: white;
+    border: 5px solid hsl(200, 100%, 30%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px; 
+    top: 20px;
+}
+
+.timer.hide {
+    display: none;
+}
